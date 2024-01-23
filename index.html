@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProArte</title>
+  <link rel="icon" href="imagenes/img1.png">
+  <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .cabecera {
+    background-image: url(wp2264148.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);text-shadow:3px 3px 3px black;
+    text-align: center;
+    padding: 100px 0;
+    }
+
+    .barra-navegacion {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .barra-navegacion a:hover{
+        color: yellow; 
+        font-weight: bold;
+    }
+
+    .barra-navegacion ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .barra-navegacion ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    #donde-estamos{
+      background-image: url(wp2264148.jpg);
+    }
+    #Titulo-DE{
+        
+      padding: 17px;
+      text-align: center;
+      color: rgb(241, 241, 241);
+      text-shadow: 2px 2px rgb(0, 0, 0);
+    }
+    
+    .map-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text-box {
+      width: 400px;
+      color: black;
+    }
+
+    #nuestros-clientes {
+        padding: 50px 0;
+    }
+
+    .titulo{
+        color: rgb(255, 255, 255);text-shadow: 3px 3px 3px black;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #contenedor-servicios{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        border: 4px solid rgb(255, 255, 255);
+        padding: 10px;
+
+    }
+
+    #nuestros-servicios{
+        background-image: url(wp2264148.jpg);
+    }
+
+    #contenedor-servicios img {
+        width: 80%;
+    }
+
+    #contenedor-servicios article {
+        width: 30%;
+        box-shadow: 3px 3px 3px black;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #opiniones-contenedor{
+        display: flex;
+        justify-content:space-around;
+        padding: 10px;
+        margin: 20px 0; 
+        border: 4px solid #ffffff; 
+    }
+    #opiniones-contenedor, img{
+        border-radius: 33px;
+        width: 100%;
+        padding: 20px;
+    }       
+    #nuestros-clientes{
+       background-image: url(wp2264148.jpg);
+
+    }
+    footer{
+        background-color: grey;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #contacte-con-nosotros{
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+
+    #enlaces{
+        width: 33%;
+    }
+
+    #mail{
+        width: 33%;
+    }
+
+    #estamos-en{
+        width: 33%;
+    }
+
+    footer h2{
+        font-size: .9em;
+    }
+
+    footer div {
+        padding: 10px;
+    }
+    @media(max-width:600px){ 
+            /*
+            nav {display: block;}
+            nav a{display: block; text-align: center;}*/
+            nav{flex-wrap: wrap;
+            position: static; justify-content: center;
+
+            }
+            #contenedor-servicios{flex-wrap: wrap;}
+          
+            #nuestros-servicios{flex-wrap: wrap;}
+            #nuestros-servicios article{width: 100%;}
+            #nuestros-clientes{flex-wrap: wrap;}
+            #nuestros-clientes article{width: 100%;}
+            #opiniones-contenedor {flex-wrap: wrap;}
+            #opiniones-contenedor article{width: 100%;}
+            #barra-navegacion {flex-wrap: wrap;}
+            #barra-navegacion ul li {width: 100%;}
+
+            nav a{width: 100%; text-align: center;}
+
+        }
+        @media(min-width:601px) and (max-width:800px){
+            
+            #contenedor-servicios{flex-wrap: wrap;}
+           
+            #nuestros-servicios{flex-wrap: wrap;}
+            #nuestros-servicios article{width: 50%;}
+            #nuestros-clientes{flex-wrap: wrap;}
+            #nuestros-clientes article{width: 50%;}
+            #opiniones-contenedor {flex-wrap: wrap;}
+            #opiniones-contenedor article{width: 50%;}
+            #barra-navegacion {flex-wrap: wrap;}
+            #barra-navegacion ul li {width: 50%;}
+
+            nav a{width: 50%; text-align: center;}
+          
+        }
+  </style>
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>ProArte</h1>
+    <p>Expertos en entornos naturales</p>
+  </header>
+
+  <nav class="barra-navegacion">
+    <ul>
+      <li><a href="#donde-estamos">Donde Estamos</a></li>
+      <li><a href="#nuestros-servicios">Nuestros Servicios</a></li>
+      <li><a href="#nuestros-clientes">Nuestros Clientes</a></li>
+    </ul>
+  </nav>
+  <section id="donde-estamos">
+    <h2 id="Titulo-DE">Donde Estamos</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3087.6566705178348!2d-2.5669553241695255!3d39.29603607164166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd687d8bd851d28f%3A0x274872cbe7d6ed19!2sProarte%2C%20Se%C3%B1alizaci%C3%B3n%20y%20Equipamiento%20para%20Entornos%20Naturales!5e0!3m2!1ses!2ses!4v1702981646884!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="text-box">
+        <h2><img src="logo_proarte.gif" alt=""></h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="nuestros-servicios">
+    <h1 class="titulo">Nuestros Servicios</h1>
+    <div id="contenedor-servicios">
+      <article>
+          <p>Montaje
+            <i class="fa-solid fa-person-digging"></i>
+            </p>
+          <img src="montaje.jpg" alt="Chalet">
+      </article>
+
+      <article>
+        <p>Senderismo
+            <i class="fa-solid fa-person-hiking"></i><i class=""></i>
+        </p>
+        <img src="senderismo.jpg" alt="Chalet">
+      </article>
+
+      <article>
+        <p>Herramientas
+            <i class="fa-solid fa-hammer"></i>
+        </p>
+        <img src="herramientas.jpg" alt="Chalet">
+      </article>
+
+      <article>
+        <p>Equipo
+            <i class="fa-solid fa-people-robbery"></i>
+        </p>
+        <img src="equipo.jpg" alt="Chalet" height="200px">
+      </article>
+    
+      <article>
+        <p>entornos naturales
+            <i class="fa-solid fa-mountain-sun"></i>
+        </p>
+        <img src="naturaleza.jpg" alt="Chalet">
+      </article>
+
+      <article>
+        <p>trasporte
+            <i class="fa-solid fa-truck"></i>
+        </p>
+        <img src="OIP.jpg" alt="Chalet">
+      </article>
+    </div>
+  </section>
+  <section id="nuestros-clientes">
+    <h1>Nuestros Clientes</h1>
+    <div id="opiniones-contenedor">
+
+        <article >
+            <img src="paco.jpg" alt="" height="330px">
+            <h2>Luis Mariano Garcia</h2>
+            <p>Una carpiteria genieal, tiene muy buen personal y el trabajo que realizan es perfecto, muy contento con los servicios</p>
+        </article>
+        <article >
+            <img src="tomas.jpg" alt="" height="330px">
+            <h2>Barajas</h2>
+            <p>Una carpiteria muy grande con un trabajo de equipo genial, la atenccion super buena y los productos que tienen para ofrecer son muy buenos y muy bien cuidados</p>
+
+        </article>
+        <article>
+            <img src="mauricio.jpg" alt="" height="330px">
+            <h2>Mauricio Colmenero</h2>
+            <p>Un equipo de instalacion muy bueno me montaron una perogola muy bonita y la instalaron en menos de una mañana, muy contento con esta empresa</p>
+        </article> 
+
+     </div>
+ </section>
+
+<footer>
+    <div id="contacte-con-nosotros">
+        <h1>Contacte con nosotros</h1>
+    </div>
+
+    <div id="enlaces">
+        <h2>Redes Sociales: </h2>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div id="estamos-en">
+        <h2>Contacto de soporte </h2>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+
+    </div>
+    <div id="email">
+      <h2>Correo de Contacto: </h2>
+      <a href="thecuenca369@gmail.com">thecuenca369@gmail.com</a>
+
+    </div>
+</footer>
+</body>
+</html>
